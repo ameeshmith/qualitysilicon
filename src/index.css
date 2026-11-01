@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* BALANCED DEEP ROYAL COBALT GLASSMORPHISM */
+  html.dark,
+  html[data-theme='dark'] {
+    color-scheme: dark;
+    background-color: #1432a6;
+    color: #ffffff;
+  }
+
+  html.dark body {
+    background: linear-gradient(160deg, #1b3fc4 0%, #14319e 52%, #0e2378 100%);
+    color: #ffffff;
+    min-height: 100vh;
+  }
+
+  /* LIGHT THEME: Crisp Daylight Frosted Glassmorphism */
+  html.light,
+  html[data-theme='light'] {
+    color-scheme: light;
+    background-color: #f0f5ff;
+    color: #0b1536;
+  }
+
+  html.light body {
+    background: linear-gradient(165deg, #dce8ff 0%, #eef4ff 50%, #f8faff 100%);
+    color: #0b1536;
+    min-height: 100vh;
+  }
+
+  /* Inputs */
+  html.dark input,
+  html.dark textarea,
+  html.dark select {
+    color-scheme: dark;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+
+  html.light input,
+  html.light textarea,
+  html.light select {
+    color-scheme: light;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    color: #0b1536 !important;
+    border-color: rgba(30, 64, 175, 0.18) !important;
+  }
+
+  html.light select option {
+    background-color: #ffffff !important;
+    color: #0b1536 !important;
+  }
+}
+
+@layer components {
+  /* Balanced Frosted Glass Surfaces */
+  .glass-panel {
+    @apply bg-white/[0.10] backdrop-blur-2xl border border-white/20 shadow-[0_18px_45px_rgba(7,18,74,0.28)];
+  }
+
+  .glass-panel-hover {
+    @apply bg-white/[0.10] backdrop-blur-2xl border border-white/20 shadow-[0_18px_45px_rgba(7,18,74,0.28)] transition-all duration-300 hover:bg-white/[0.16] hover:border-white/35;
+  }
+
+  .glass-pill {
+    @apply bg-white/[0.13] backdrop-blur-xl border border-white/20;
+  }
+}
+
+/* Light mode adaptations for glass panels and text */
+html.light .glass-panel,
+html.light .glass-panel-hover {
+  background-color: rgba(255, 255, 255, 0.78) !important;
+  border-color: rgba(37, 99, 235, 0.18) !important;
+  box-shadow: 0 20px 45px rgba(29, 78, 216, 0.07) !important;
+}
+
+html.light .glass-panel-hover:hover {
+  background-color: rgba(255, 255, 255, 0.94) !important;
+  border-color: rgba(37, 99, 235, 0.32) !important;
+}
+
+html.light .glass-pill {
+  background-color: rgba(37, 99, 235, 0.08) !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
+html.light .theme-heading {
+  color: #0b1536 !important;
+}
+
+html.light .theme-subtext {
+  color: #334155 !important;
+}
+
+html.light .theme-muted {
+  color: #475569 !important;
+}
+
+html.light .theme-primary-btn {
+  background-color: #1839b8 !important;
+  color: #ffffff !important;
+}
+
+html.light .theme-secondary-btn {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(29, 78, 216, 0.22) !important;
+  color: #0b1536 !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+html.dark ::-webkit-scrollbar-track {
+  background: #0e2378;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+}
+html.light ::-webkit-scrollbar-track {
+  background: #eef4ff;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #93c5fd;
+  border-radius: 9999px;
+}

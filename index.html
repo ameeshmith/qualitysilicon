@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050811" />
+  <title>Quality Media.com Pvt Ltd | Tax Compliance, DSC, Tally & BUSY Dealer in Udupi</title>
+  <meta name="description"
+    content="Premier taxation compliance provider and authorized accounting software dealer in Udupi, Karnataka since 2000. PAN, TDS, Income Tax Returns, Class 3 DSC, TallyPrime & BUSY Accounting Software." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('qm_theme') || 'dark';
+        var root = document.documentElement;
+        if (saved === 'light') {
+          root.classList.remove('dark');
+          root.classList.add('light');
+          root.setAttribute('data-theme', 'light');
+        } else {
+          root.classList.remove('light');
+          root.classList.add('dark');
+          root.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body class="antialiased selection:bg-[#2D5BFF] selection:text-white overflow-x-hidden transition-colors duration-300">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
