@@ -8,6 +8,7 @@ import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
 import PortalView from './components/PortalView.jsx';
+import ChatWidget from './components/ChatWidget.jsx';
 
 export default function App() {
   const [selectedService, setSelectedService] = useState('DSC');
@@ -94,6 +95,9 @@ export default function App() {
           </>
         )}
       </main>
+
+      {/* Interactive Groq AI Chatbot Widget */}
+      <ChatWidget onOpenPortal={handleOpenPortal} />
 
       {/* Footer */}
       <Footer />

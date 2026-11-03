@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <p className="font-display text-sm font-bold text-white theme-heading">
-            Quality Media.com Pvt. Ltd. &amp; Silicon Technologies
+            Quality Media.com Pvt. Ltd.
           </p>
           <p className="text-xs text-white/70 theme-subtext mt-0.5">
             © {new Date().getFullYear()} All rights reserved • Shiribeedu, Udupi – 576101

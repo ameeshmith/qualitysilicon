@@ -67,7 +67,7 @@ export default function Navbar({
                 <span className="h-1.5 w-1.5 rounded-full bg-[#FACC15]" />
               </div>
               <span className="text-[11px] font-medium text-white/75 theme-subtext tracking-wide mt-0.5">
-                &amp; Silicon Technologies
+                Pvt Ltd • Udupi
               </span>
             </div>
           </a>

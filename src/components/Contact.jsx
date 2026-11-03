@@ -65,7 +65,7 @@ export default function Contact({ selectedService }) {
   const whatsappDirectUrl =
     'https://wa.me/919845242565?text=' +
     encodeURIComponent(
-      'Hello Quality Media & Silicon Technologies, I would like to inquire about your services.'
+      'Hello Quality Media.com Pvt Ltd, I would like to inquire about your services.'
     );
 
   const googleMapsDirectionsUrl =
@@ -203,10 +203,10 @@ export default function Contact({ selectedService }) {
                 <div className="flex items-center gap-3.5 rounded-2xl glass-pill p-4">
                   <Mail className="h-5 w-5 text-white theme-heading shrink-0" />
                   <a
-                    href="mailto:qualitysilicon@gmail.com"
+                    href="mailto:qualitymediaudupi@gmail.com"
                     className="text-white theme-heading font-medium hover:underline"
                   >
-                    qualitysilicon@gmail.com
+                    qualitymediaudupi@gmail.com
                   </a>
                 </div>
 

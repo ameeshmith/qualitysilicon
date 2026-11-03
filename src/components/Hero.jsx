@@ -50,7 +50,7 @@ export default function Hero({ onTalkToExpert, onOpenPortal }) {
             >
               <span className="h-2 w-2 rounded-full bg-[#FACC15] shadow-[0_0_8px_#FACC15]" />
               <p className="text-xs sm:text-sm font-semibold tracking-wide text-white/95 theme-heading">
-                Quality Media.com Pvt Ltd &amp; Silicon Technologies • Udupi
+                Quality Media.com Pvt Ltd • Udupi
               </p>
             </motion.div>
 
@@ -76,9 +76,7 @@ export default function Hero({ onTalkToExpert, onOpenPortal }) {
               transition={{ duration: 0.5, delay: 0.16 }}
               className="mt-7 max-w-xl text-base sm:text-lg text-white/80 theme-subtext leading-relaxed font-normal"
             >
-              Upload your forms directly from home or office. Quality Media &amp;
-              Silicon Technologies handles your PAN, TDS, ITR, Class 3 DSC, and
-              TallyPrime &amp; BUSY software in Udupi.
+              Upload your forms directly from home or office. Quality Media.com Pvt Ltd handles your PAN, TDS, ITR, Class 3 DSC, and TallyPrime &amp; BUSY software in Udupi.
             </motion.p>
 
             {/* Dual Pill CTAs matching the reference layout with a subtle yellow accent */}
@@ -190,7 +188,7 @@ export default function Hero({ onTalkToExpert, onOpenPortal }) {
                           Q
                         </span>
                         <span className="font-semibold text-[11px] text-slate-700">
-                          Quality Media &amp; Silicon
+                          Quality Media
                         </span>
                       </div>
                       <div className="rounded-2xl rounded-tl-sm bg-slate-100 px-3.5 py-2.5 text-slate-700 leading-relaxed">

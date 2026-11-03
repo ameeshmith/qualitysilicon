@@ -24,7 +24,7 @@ export default function About() {
                 Two decades of trust in Coastal Karnataka.
               </h2>
               <p className="mt-4 text-base text-white/80 theme-subtext leading-relaxed max-w-xl">
-                Quality Media.com Pvt. Ltd. and Silicon Technologies partner
+                Quality Media.com Pvt. Ltd. partner
                 with businesses, CAs, and traders across Udupi for zero-hassle
                 tax compliance, Class 3 DSC tokens, and TallyPrime &amp; BUSY
                 software support.

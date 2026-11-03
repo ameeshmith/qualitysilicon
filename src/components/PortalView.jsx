@@ -166,13 +166,13 @@ export default function PortalView({ initialRole = 'customer', onBackToHome }) {
       if (
         (loginForm.identifier.toLowerCase() === 'admin' ||
           loginForm.identifier.toLowerCase() === 'admin@qualitymedia.com' ||
-          loginForm.identifier.toLowerCase() === 'qualitysilicon@gmail.com') &&
+          loginForm.identifier.toLowerCase() === 'qualitymediaudupi@gmail.com') &&
         loginForm.password === 'admin123'
       ) {
         setCurrentUser({
           role: 'admin',
           name: 'Quality Media Office Desk',
-          email: 'qualitysilicon@gmail.com',
+          email: 'qualitymediaudupi@gmail.com',
         });
       } else {
         setAuthError(
@@ -225,7 +225,7 @@ export default function PortalView({ initialRole = 'customer', onBackToHome }) {
       setCurrentUser({
         role: 'admin',
         name: 'Quality Media Office Desk',
-        email: 'qualitysilicon@gmail.com',
+        email: 'qualitymediaudupi@gmail.com',
       });
     } else {
       setCurrentUser({
@@ -384,7 +384,7 @@ export default function PortalView({ initialRole = 'customer', onBackToHome }) {
             {/* Left Editorial Pitch */}
             <div className="lg:col-span-6 space-y-5">
               <p className="text-sm font-semibold text-white/80 theme-subtext">
-                Quality Media &amp; Silicon Technologies • Digital Desk
+                Quality Media.com Pvt Ltd • Digital Desk
               </p>
               <h1 className="font-display text-4xl sm:text-5xl font-bold tracking-tight text-white theme-heading leading-[1.08]">
                 Upload your forms from anywhere.
@@ -462,7 +462,7 @@ export default function PortalView({ initialRole = 'customer', onBackToHome }) {
                 </h2>
                 <p className="mt-1 text-xs sm:text-sm text-white/75 theme-subtext">
                   {roleTab === 'admin'
-                    ? 'For Quality Media & Silicon Technologies staff in Udupi.'
+                    ? 'For Quality Media.com Pvt Ltd staff in Udupi.'
                     : 'Access your remote document vault and filing status.'}
                 </p>
 
@@ -764,7 +764,7 @@ export default function PortalView({ initialRole = 'customer', onBackToHome }) {
                       Your Uploaded Forms &amp; Status
                     </h2>
                     <p className="text-xs text-white/75 theme-subtext">
-                      Real-time updates from Quality Media &amp; Silicon Technologies.
+                      Real-time updates from Quality Media.com Pvt Ltd.
                     </p>
                   </div>
                   <span className="rounded-full glass-pill px-3 py-1 text-xs font-semibold text-white theme-heading">
@@ -1028,7 +1028,7 @@ export default function PortalView({ initialRole = 'customer', onBackToHome }) {
                         href={
                           `https://wa.me/91${sub.customerPhone}?text=` +
                           encodeURIComponent(
-                            `Hello ${sub.customerName}, update from Quality Media & Silicon Technologies (Ref ${sub.id} - ${sub.service}): Status is "${sub.status}". ${sub.officeNote}`
+                            `Hello ${sub.customerName}, update from Quality Media.com Pvt Ltd (Ref ${sub.id} - ${sub.service}): Status is "${sub.status}". ${sub.officeNote}`
                           )
                         }
                         target="_blank"
